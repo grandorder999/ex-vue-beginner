@@ -15,7 +15,7 @@ export default class XXXComponent extends Vue {
   private num2 = 0;
 
   //変数名、メソッド名はわかりやすい名前にする
-  //表示のみの時はgetter
+  //表示のみの時はgetterを使う
   get result(): number {
     return this.num1 + this.num2;
   }
