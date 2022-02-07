@@ -6,6 +6,11 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
+    path: "/Ex04",
+    component: () => import("../views/Ex04.vue"),
+  },
+
+  {
     path: "/Ex03",
     component: () => import("../views/Ex03.vue"),
   },
