@@ -26,4 +26,8 @@ export default class XXXComponent extends Vue {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+div.container {
+  border: solid 2px black;
+}
+</style>
