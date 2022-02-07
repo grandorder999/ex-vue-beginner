@@ -3,7 +3,7 @@
     <input type="number" v-model.number="num1" />+<input
       type="number"
       v-model.number="num2"
-    />={{ add }}
+    />={{ result }}
   </div>
 </template>
 
@@ -14,7 +14,9 @@ export default class XXXComponent extends Vue {
   private num1 = 0;
   private num2 = 0;
 
-  get add(): number {
+  //変数名、メソッド名はわかりやすい名前にする
+  //表示のみの時はgetter
+  get result(): number {
     return this.num1 + this.num2;
   }
 }
